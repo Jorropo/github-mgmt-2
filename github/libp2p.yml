@@ -2,7 +2,6 @@
 
 members:
   admin:
-    - Stebalien
     - aschmahmann
     - daviddias
     - galargh
@@ -12,30 +11,18 @@ members:
     - momack2
     - protocollabsit
     - raulk
+    - Stebalien
     - whyrusleeping
   member:
-    - AgeManning
-    - AlanSl
-    - BigLep
-    - ChihChengLiang
-    - Gozala
-    - Harrm
-    - JGAntunes
-    - Kubuxu
-    - MarcoPolo
-    - NIC619
-    - Nashatyrev
-    - RichardLitt
-    - SgtPooki
-    - Warchant
-    - ZenGround0
     - aamnv
     - aarshkshah1992
     - achingbrain
     - adlrocha
+    - AgeManning
     - ajnavarro
     - ajsutton
     - alanshaw
+    - AlanSl
     - alexh
     - andrew
     - andyschwab
@@ -43,8 +30,10 @@ members:
     - arajasek
     - art-gor
     - autonome
+    - BigLep
     - bigs
     - cemozerr
+    - ChihChengLiang
     - dignifiedquire
     - dirkmc
     - dryajov
@@ -58,10 +47,12 @@ members:
     - gavinmcdermott
     - geoah
     - gmasgras
+    - Gozala
     - guseggert
     - haadcode
     - hacdias
     - hannahhoward
+    - Harrm
     - hsanjuan
     - hugomrdias
     - iand
@@ -70,17 +61,21 @@ members:
     - ipfsbot
     - jbenetsafer
     - jchris
+    - JGAntunes
     - jrhea
     - jsoares
     - kamilsa
     - keks
     - kevina
     - kishansagathiya
+    - Kubuxu
     - kumavis
+    - laurentsenta
     - lidel
     - litzenberger
     - locotorp
     - magik6k
+    - MarcoPolo
     - masih
     - mbaxter
     - mcamou
@@ -93,20 +88,24 @@ members:
     - mpetrunic
     - mvid
     - mxinden
+    - Nashatyrev
+    - NIC619
     - nicola
     - nunofmn
     - olizilla
     - ortyomka
+    - p-shahi
     - petar
     - pipermerriam
     - protocollabsit-readonly
     - protolambda
-    - p-shahi
     - ralexstokes
+    - RichardLitt
     - richardschneider
     - robzajac
     - rolfyone
     - romanb
+    - SgtPooki
     - shahankhatch
     - snazha-blkio
     - stongo
@@ -121,15 +120,16 @@ members:
     - vmx
     - vyzo
     - walkerlj0
+    - Warchant
     - web3-bot
     - wemeetagain
     - willscott
     - xDimon
     - yiannisbot
     - yusefnapora
+    - ZenGround0
     - zixuanzh
     - zuiris
-    - laurentsenta
 repositories:
   .github:
     teams:
@@ -142,10 +142,10 @@ repositories:
       admin:
         - w3dt-stewards
       pull:
+        - Admin
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
-        - go-libp2p Maintainers
-        - Admin
     visibility: public
   community:
     description: General discussion and documentation on community practices
@@ -216,11 +216,11 @@ repositories:
       admin:
         - w3dt-stewards
       pull:
-        - Repos - Go
-        - Repos - JavaScript
+        - Admin
         - contributors
         - go-libp2p Maintainers
-        - Admin
+        - Repos - Go
+        - Repos - JavaScript
       push:
         - Repos - Rust
     topics:
@@ -236,15 +236,15 @@ repositories:
     description: 2018 libp2p Developers Meeting in Berlin
     teams:
       admin:
+        - Admin
         - Repos - Rust
         - w3dt-stewards
-        - Admin
       pull:
         - contributors
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
-        - go-libp2p Maintainers
     visibility: public
   devgrants:
     description: want to hack on libp2p? this repo tracks libp2p endeavors eligible
@@ -268,19 +268,19 @@ repositories:
       admin:
         - w3dt-stewards
     visibility: private
+  dht-tracer-archived:
+    teams:
+      admin:
+        - w3dt-stewards
+    visibility: public
   dht-tracer:
     teams:
       admin:
         - w3dt-stewards
       pull:
-        - Repos - Go
-        - go-libp2p Maintainers
         - Admin
-    visibility: public
-  dht-tracer-archived:
-    teams:
-      admin:
-        - w3dt-stewards
+        - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   dht-tracer1:
     collaborators:
@@ -306,6 +306,13 @@ repositories:
       admin:
         - w3dt-stewards
     visibility: public
+  docs-old:
+    description: libp2p documentation website
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+    visibility: public
   docs:
     collaborators:
       maintain:
@@ -314,28 +321,21 @@ repositories:
       https://docs.libp2p.io/"
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       pull:
         - docs
       push:
+        - ci
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Repos - Rust
-        - ci
-        - go-libp2p Maintainers
     topics:
       - libp2p
       - peer-to-peer
       - type-documentation
       - type-website
-    visibility: public
-  docs-old:
-    description: libp2p documentation website
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
     visibility: public
   fclibp2p-zhi:
     description: New Issues for filecoin<=>libp2p deps workspace
@@ -368,8 +368,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-buffer-pool:
     collaborators:
@@ -377,11 +377,11 @@ repositories:
         - web3-bot
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-cidranger:
     collaborators:
@@ -395,8 +395,8 @@ repositories:
       pull:
         - contributors
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-composable-routing:
     collaborators:
@@ -408,6 +408,22 @@ repositories:
     teams:
       admin:
         - w3dt-stewards
+    visibility: public
+  go-conn-security-multistream:
+    collaborators:
+      admin:
+        - Stebalien
+      push:
+        - aarshkshah1992
+        - web3-bot
+    description: Multiplexed secure transport module for go-libp2p
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-conn-security:
     collaborators:
@@ -421,24 +437,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    visibility: public
-  go-conn-security-multistream:
-    collaborators:
-      admin:
-        - Stebalien
-      push:
-        - aarshkshah1992
-        - web3-bot
-    description: Multiplexed secure transport module for go-libp2p
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      push:
         - Repos - Go
-        - go-libp2p Maintainers
     visibility: public
   go-doh-resolver:
     collaborators:
@@ -466,8 +466,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-flow-metrics:
     collaborators:
@@ -475,36 +475,12 @@ repositories:
         - web3-bot
     teams:
       admin:
-        - w3dt-stewards
-        - Admin
-      push:
-        - Repos - Go
-        - go-libp2p Maintainers
-    visibility: public
-  go-libp2p:
-    collaborators:
-      push:
-        - web3-bot
-    description: libp2p implementation in Go
-    teams:
-      admin:
         - Admin
         - w3dt-stewards
-      maintain:
-        - go-libp2p Maintainers
       push:
+        - go-libp2p Maintainers
         - Repos - Go
-    topics:
-      - libp2p
-      - networking-stack
-      - p2p
     visibility: public
-  go-libp2p-asn:
-    collaborators:
-      admin:
-        - aarshkshah1992
-    description: ASN lookup library for IPv4 and IPv6 addresses.
-    visibility: private
   go-libp2p-asn-util:
     collaborators:
       push:
@@ -516,8 +492,29 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-libp2p-asn:
+    collaborators:
+      admin:
+        - aarshkshah1992
+    description: ASN lookup library for IPv4 and IPv6 addresses.
+    visibility: private
+  go-libp2p-autonat-svc:
+    description: "[DEPRECATED] AutoNAT Service implementation -- use
+      github.com/libp2p/go-libp2p-autonat"
+    teams:
+      admin:
+        - Admin
+      pull:
+        - contributors
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
+    topics:
+      - libp2p
+      - nat
     visibility: public
   go-libp2p-autonat:
     collaborators:
@@ -528,26 +525,11 @@ repositories:
     description: "DEPRECATED: NAT Autodiscovery"
     teams:
       admin:
+        - Admin
         - w3dt-stewards
-        - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    topics:
-      - libp2p
-      - nat
-    visibility: public
-  go-libp2p-autonat-svc:
-    description: "[DEPRECATED] AutoNAT Service implementation -- use
-      github.com/libp2p/go-libp2p-autonat"
-    teams:
-      admin:
-        - Admin
-      pull:
-        - contributors
-      push:
         - Repos - Go
-        - go-libp2p Maintainers
     topics:
       - libp2p
       - nat
@@ -574,8 +556,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-certbot:
     collaborators:
@@ -588,6 +570,15 @@ repositories:
         - Admin
         - go-libp2p Maintainers
         - w3dt-stewards
+    visibility: public
+  go-libp2p-circuit-progs:
+    collaborators:
+      admin:
+        - vyzo
+    description: "[DEPRECATED] Simple testing programs for go-libp2p-circuit"
+    teams:
+      admin:
+        - Admin
     visibility: public
   go-libp2p-circuit:
     collaborators:
@@ -603,15 +594,6 @@ repositories:
       push:
         - Repos - Go
     visibility: public
-  go-libp2p-circuit-progs:
-    collaborators:
-      admin:
-        - vyzo
-    description: "[DEPRECATED] Simple testing programs for go-libp2p-circuit"
-    teams:
-      admin:
-        - Admin
-    visibility: public
   go-libp2p-conn:
     collaborators:
       push:
@@ -621,8 +603,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-connmgr:
     collaborators:
@@ -635,8 +617,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-consensus:
     collaborators:
@@ -648,8 +630,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-coral-dht:
     collaborators:
@@ -673,8 +655,8 @@ repositories:
     description: Interfaces and abstractions that make up go-libp2p
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       maintain:
         - go-libp2p Maintainers
       pull:
@@ -692,8 +674,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-daemon:
     collaborators:
@@ -705,11 +687,11 @@ repositories:
       for use in other languages
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-discovery:
     collaborators:
@@ -718,11 +700,11 @@ repositories:
     description: "Active Peer Discovery "
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-dummy-conn:
     collaborators:
@@ -733,8 +715,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-examples:
     collaborators:
@@ -746,8 +728,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-gorpc:
     branch_protection:
@@ -763,26 +745,26 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-gostream:
     branch_protection:
       master: {}
     collaborators:
       admin:
-        - Stebalien
         - hsanjuan
+        - Stebalien
       push:
         - web3-bot
     description: Go "net" wrappers for libp2p
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-holepunch-test:
     description: Script for testing Hole Punching among a group of users
@@ -800,8 +782,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-http:
     branch_protection:
@@ -817,8 +799,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     topics:
       - go
       - http
@@ -835,8 +817,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-interface-conn:
     collaborators:
@@ -847,8 +829,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-interface-connmgr:
     collaborators:
@@ -860,8 +842,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-interface-pnet:
     collaborators:
@@ -873,8 +855,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-introspector:
     collaborators:
@@ -886,8 +868,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-kad-dht:
     collaborators:
@@ -913,8 +895,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-loggables:
     collaborators:
@@ -926,8 +908,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-metrics:
     collaborators:
@@ -939,8 +921,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-mplex:
     collaborators:
@@ -953,8 +935,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-nat:
     collaborators:
@@ -981,8 +963,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-netutil:
     collaborators:
@@ -995,8 +977,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-noise:
     branch_protection:
@@ -1031,8 +1013,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-peerstore:
     branch_protection:
@@ -1059,8 +1041,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-pnet:
     collaborators:
@@ -1073,8 +1055,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-protocol:
     collaborators:
@@ -1086,8 +1068,46 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-libp2p-pubsub-DEPRECATED:
+    collaborators:
+      push:
+        - aarshkshah1992
+    description: PubSub interface for go-libp2p
+    teams:
+      admin:
+        - Admin
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-libp2p-pubsub-router:
+    collaborators:
+      push:
+        - web3-bot
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      maintain:
+        - go-libp2p Maintainers
+      push:
+        - Repos - Go
+    visibility: public
+  go-libp2p-pubsub-tracer:
+    collaborators:
+      admin:
+        - vyzo
+      push:
+        - web3-bot
+    description: Daemon and tools for pubsub tracing
+    teams:
+      admin:
+        - go-libp2p Maintainers
+        - Repos - Go
+        - w3dt-stewards
     visibility: public
   go-libp2p-pubsub:
     branch_protection:
@@ -1104,44 +1124,6 @@ repositories:
         - go-libp2p Maintainers
       push:
         - Repos - Go
-    visibility: public
-  go-libp2p-pubsub-DEPRECATED:
-    collaborators:
-      push:
-        - aarshkshah1992
-    description: PubSub interface for go-libp2p
-    teams:
-      admin:
-        - Admin
-      push:
-        - Repos - Go
-        - go-libp2p Maintainers
-    visibility: public
-  go-libp2p-pubsub-router:
-    collaborators:
-      push:
-        - web3-bot
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      maintain:
-        - go-libp2p Maintainers
-      push:
-        - Repos - Go
-    visibility: public
-  go-libp2p-pubsub-tracer:
-    collaborators:
-      admin:
-        - vyzo
-      push:
-        - web3-bot
-    description: Daemon and tools for pubsub tracing
-    teams:
-      admin:
-        - Repos - Go
-        - go-libp2p Maintainers
-        - w3dt-stewards
     visibility: public
   go-libp2p-quic-transport:
     collaborators:
@@ -1176,8 +1158,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-record:
     collaborators:
@@ -1189,8 +1171,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-relay-daemon:
     collaborators:
@@ -1208,11 +1190,11 @@ repositories:
     description: Go implementation of rendezvous protocol
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-resource-manager:
     collaborators:
@@ -1229,6 +1211,18 @@ repositories:
       push:
         - Repos - Go
     visibility: public
+  go-libp2p-routing-helpers:
+    collaborators:
+      push:
+        - web3-bot
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
   go-libp2p-routing:
     collaborators:
       push:
@@ -1239,20 +1233,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    visibility: public
-  go-libp2p-routing-helpers:
-    collaborators:
-      push:
-        - web3-bot
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      push:
         - Repos - Go
-        - go-libp2p Maintainers
     visibility: public
   go-libp2p-secio:
     collaborators:
@@ -1263,8 +1245,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-slog:
     description: Go API for structured logging and querying
@@ -1313,8 +1295,23 @@ repositories:
     description: go-libp2p's TLS encrypted transport
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
+      maintain:
+        - go-libp2p Maintainers
+      push:
+        - Repos - Go
+    visibility: public
+  go-libp2p-transport-upgrader:
+    collaborators:
+      admin:
+        - Stebalien
+      push:
+        - web3-bot
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
       maintain:
         - go-libp2p Maintainers
       push:
@@ -1331,22 +1328,7 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    visibility: public
-  go-libp2p-transport-upgrader:
-    collaborators:
-      admin:
-        - Stebalien
-      push:
-        - web3-bot
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      maintain:
-        - go-libp2p Maintainers
-      push:
         - Repos - Go
     visibility: public
   go-libp2p-webrtc-direct:
@@ -1376,11 +1358,11 @@ repositories:
     description: The rendezvous service for libp2p-websocket-star written in go
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-xor:
     collaborators:
@@ -1394,8 +1376,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-libp2p-yamux:
     collaborators:
@@ -1407,8 +1389,26 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-libp2p:
+    collaborators:
+      push:
+        - web3-bot
+    description: libp2p implementation in Go
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      maintain:
+        - go-libp2p Maintainers
+      push:
+        - Repos - Go
+    topics:
+      - libp2p
+      - networking-stack
+      - p2p
     visibility: public
   go-maddr-filter:
     collaborators:
@@ -1420,8 +1420,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-mplex:
     collaborators:
@@ -1433,8 +1433,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-msgio:
     collaborators:
@@ -1444,11 +1444,11 @@ repositories:
     description: simple package to r/w length-delimited slices.
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-nat:
     collaborators:
@@ -1458,11 +1458,11 @@ repositories:
     description: NAT port mapping library for Go
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-netroute:
     collaborators:
@@ -1476,8 +1476,8 @@ repositories:
       pull:
         - contributors
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-openssl:
     collaborators:
@@ -1492,8 +1492,8 @@ repositories:
       pull:
         - contributors
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-peerstream:
     collaborators:
@@ -1504,8 +1504,22 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-reuseport-transport:
+    collaborators:
+      push:
+        - aarshkshah1992
+        - web3-bot
+    description: A basic transport for automatically (and intelligently) reusing TCP ports
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-reuseport:
     collaborators:
@@ -1520,20 +1534,6 @@ repositories:
         - go-libp2p Maintainers
       push:
         - Repos - Go
-    visibility: public
-  go-reuseport-transport:
-    collaborators:
-      push:
-        - aarshkshah1992
-        - web3-bot
-    description: A basic transport for automatically (and intelligently) reusing TCP ports
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      push:
-        - Repos - Go
-        - go-libp2p Maintainers
     visibility: public
   go-routing-language:
     collaborators:
@@ -1559,8 +1559,8 @@ repositories:
       admin:
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-sockaddr:
     collaborators:
@@ -1573,8 +1573,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-socket-activation:
     collaborators:
@@ -1586,8 +1586,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-src-select:
     collaborators:
@@ -1601,24 +1601,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    visibility: public
-  go-stream-muxer:
-    collaborators:
-      admin:
-        - jbenet
-        - whyrusleeping
-      push:
-        - aarshkshah1992
-    description: "[DEPRECATED] stream multiplexer interface; use
-      https://github.com/libp2p/go-libp2p-core/ instead."
-    teams:
-      admin:
-        - Admin
-      push:
         - Repos - Go
-        - go-libp2p Maintainers
     visibility: public
   go-stream-muxer-multistream:
     collaborators:
@@ -1633,8 +1617,24 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
+  go-stream-muxer:
+    collaborators:
+      admin:
+        - jbenet
+        - whyrusleeping
+      push:
+        - aarshkshah1992
+    description: "[DEPRECATED] stream multiplexer interface; use
+      https://github.com/libp2p/go-libp2p-core/ instead."
+    teams:
+      admin:
+        - Admin
+      push:
+        - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-tcp-transport:
     collaborators:
@@ -1661,8 +1661,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-udp-transport:
     description: Implementation of an unreliable packet transport for libp2p, using UDP
@@ -1671,8 +1671,8 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-utp-transport:
     collaborators:
@@ -1684,8 +1684,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-ws-transport:
     collaborators:
@@ -1711,8 +1711,8 @@ repositories:
       admin:
         - Admin
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   go-yamux:
     collaborators:
@@ -1743,6 +1743,19 @@ repositories:
         - Admin
         - w3dt-stewards
     visibility: public
+  hydra-booster-infra:
+    collaborators:
+      admin:
+        - guseggert
+    description: Infrastructure for Hydra Boosters
+    teams:
+      admin:
+        - Admin
+      push:
+        - Bifrost
+        - go-libp2p Maintainers
+        - Repos - Go
+    visibility: public
   hydra-booster:
     collaborators:
       admin:
@@ -1756,26 +1769,13 @@ repositories:
       admin:
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     topics:
       - dht
       - ipfs
       - libp2p
       - scalability
-    visibility: public
-  hydra-booster-infra:
-    collaborators:
-      admin:
-        - guseggert
-    description: Infrastructure for Hydra Boosters
-    teams:
-      admin:
-        - Admin
-      push:
-        - Bifrost
-        - Repos - Go
-        - go-libp2p Maintainers
     visibility: public
   interface-connection:
     collaborators:
@@ -1866,12 +1866,12 @@ repositories:
     description: Interoperability tests for libp2p Implementations
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
-        - go-libp2p Maintainers
     visibility: public
   js-iprs-record:
     branch_protection:
@@ -1888,22 +1888,6 @@ repositories:
         - Admin
       push:
         - Repos - JavaScript
-    visibility: public
-  js-libp2p:
-    description: The JavaScript Implementation of libp2p networking stack.
-    teams:
-      admin:
-        - Admin
-        - js-libp2p ChainSafe Maintainers
-        - w3dt-stewards
-      push:
-        - Repos - JavaScript
-    topics:
-      - ipfs
-      - js-ipfs
-      - libp2p
-      - networking-stack
-      - p2p
     visibility: public
   js-libp2p-bootstrap:
     collaborators:
@@ -1943,18 +1927,6 @@ repositories:
       push:
         - Repos - JavaScript
     visibility: public
-  js-libp2p-connection:
-    collaborators:
-      push:
-        - web3-bot
-    description: JS Libp2p connections
-    teams:
-      admin:
-        - Admin
-        - w3dt-stewards
-      push:
-        - Repos - JavaScript
-    visibility: public
   js-libp2p-connection-manager:
     description: "[DEPRECATED]: now part of the https://github.com/libp2p/js-libp2p repo"
     teams:
@@ -1970,11 +1942,11 @@ repositories:
       - p2p
       - resource-manager
     visibility: public
-  js-libp2p-crypto:
+  js-libp2p-connection:
     collaborators:
       push:
         - web3-bot
-    description: The libp2p crypto primitives, for Node.js and the Browser!
+    description: JS Libp2p connections
     teams:
       admin:
         - Admin
@@ -1991,16 +1963,15 @@ repositories:
       push:
         - Repos - JavaScript
     visibility: public
-  js-libp2p-daemon:
+  js-libp2p-crypto:
     collaborators:
       push:
         - web3-bot
-    description: A js-libp2p backed daemon
+    description: The libp2p crypto primitives, for Node.js and the Browser!
     teams:
       admin:
-        - w3dt-stewards
-      pull:
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     visibility: public
@@ -2021,6 +1992,19 @@ repositories:
         - achingbrain
     description: Protocol for communication between libp2p-daemon and libp2p-client
     visibility: public
+  js-libp2p-daemon:
+    collaborators:
+      push:
+        - web3-bot
+    description: A js-libp2p backed daemon
+    teams:
+      admin:
+        - w3dt-stewards
+      pull:
+        - Admin
+      push:
+        - Repos - JavaScript
+    visibility: public
   js-libp2p-delegated-content-routing:
     collaborators:
       push:
@@ -2028,8 +2012,8 @@ repositories:
     description: Leverage other peers in the network to perform Content Routing calls.
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     visibility: public
@@ -2040,8 +2024,8 @@ repositories:
     description: Leverage other peers in the network to perform Peer Routing calls.
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     visibility: public
@@ -2215,8 +2199,8 @@ repositories:
       in libp2p.
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     visibility: public
@@ -2293,23 +2277,23 @@ repositories:
       push:
         - Repos - JavaScript
     visibility: public
-  js-libp2p-pubsub:
-    collaborators:
-      push:
-        - web3-bot
-    description: Pubsub base protocol for libp2p pubsub routers
-    teams:
-      admin:
-        - w3dt-stewards
-        - Admin
-      push:
-        - Repos - JavaScript
-    visibility: public
   js-libp2p-pubsub-peer-discovery:
     collaborators:
       push:
         - web3-bot
     description: A js-libp2p module that uses pubsub for mdns like peer discovery
+    teams:
+      admin:
+        - Admin
+        - w3dt-stewards
+      push:
+        - Repos - JavaScript
+    visibility: public
+  js-libp2p-pubsub:
+    collaborators:
+      push:
+        - web3-bot
+    description: Pubsub base protocol for libp2p pubsub routers
     teams:
       admin:
         - Admin
@@ -2337,15 +2321,15 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - JavaScript
         - ci
+        - Repos - JavaScript
     visibility: public
   js-libp2p-rendezvous:
     description: A javascript implementation of the rendezvous protocol for libp2p
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     visibility: public
@@ -2387,8 +2371,8 @@ repositories:
       admin:
         - ci
       push:
-        - Repos - JavaScript
         - Admin
+        - Repos - JavaScript
     visibility: public
   js-libp2p-switch:
     description: "[DEPRECATED]: now part of the https://github.com/libp2p/js-libp2p repo"
@@ -2517,14 +2501,6 @@ repositories:
       push:
         - Repos - JavaScript
     visibility: public
-  js-libp2p-websocket-star:
-    description: libp2p-webrtc-star without webrtc. Just plain socket.io.
-    teams:
-      admin:
-        - Admin
-      push:
-        - Repos - JavaScript
-    visibility: public
   js-libp2p-websocket-star-multi:
     collaborators:
       push:
@@ -2549,6 +2525,14 @@ repositories:
       push:
         - Repos - JavaScript
     visibility: public
+  js-libp2p-websocket-star:
+    description: libp2p-webrtc-star without webrtc. Just plain socket.io.
+    teams:
+      admin:
+        - Admin
+      push:
+        - Repos - JavaScript
+    visibility: public
   js-libp2p-websockets:
     collaborators:
       push:
@@ -2561,6 +2545,22 @@ repositories:
         - w3dt-stewards
       push:
         - Repos - JavaScript
+    visibility: public
+  js-libp2p:
+    description: The JavaScript Implementation of libp2p networking stack.
+    teams:
+      admin:
+        - Admin
+        - js-libp2p ChainSafe Maintainers
+        - w3dt-stewards
+      push:
+        - Repos - JavaScript
+    topics:
+      - ipfs
+      - js-ipfs
+      - libp2p
+      - networking-stack
+      - p2p
     visibility: public
   js-p2pcat:
     description: A netcat like utility but for the p2p Internet
@@ -2649,28 +2649,22 @@ repositories:
       admin:
         - Admin
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Repos - Rust
-        - go-libp2p Maintainers
     visibility: public
   notes:
     description: libp2p Collaborative Notebook for Research
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Repos - Rust
-        - go-libp2p Maintainers
-    visibility: public
-  npm-go-libp2p:
-    collaborators:
-      admin:
-        - achingbrain
-    description: Install go-libp2p-daemon via npm
     visibility: public
   npm-go-libp2p-dep:
     description: Install go-libp2p from npm as a dependency of your project
@@ -2678,9 +2672,15 @@ repositories:
       admin:
         - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
-        - go-libp2p Maintainers
+    visibility: public
+  npm-go-libp2p:
+    collaborators:
+      admin:
+        - achingbrain
+    description: Install go-libp2p-daemon via npm
     visibility: public
   observation-deck:
     description: 🐣 [WIP] Catalogue of widgets for visualising libp2p introspection
@@ -2708,13 +2708,13 @@ repositories:
     description: A repo of sub-projects within libp2p for contributors to pick up
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Repos - Rust
-        - go-libp2p Maintainers
     visibility: public
   pubsub-notes:
     collaborators:
@@ -2730,24 +2730,14 @@ repositories:
       with pull-streams
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
         - Repos - JavaScript
     topics:
       - libp2p
       - mplex
       - pull-stream
-    visibility: public
-  py-libp2p:
-    collaborators:
-      admin:
-        - carver
-    description: The Python implementation of the libp2p networking stack 🐍 [under
-      development]
-    teams:
-      admin:
-        - w3dt-stewards
     visibility: public
   py-libp2p-slog:
     description: Python API for structured logging and querying
@@ -2762,6 +2752,16 @@ repositories:
       admin:
         - w3dt-stewards
     visibility: public
+  py-libp2p:
+    collaborators:
+      admin:
+        - carver
+    description: The Python implementation of the libp2p networking stack 🐍 [under
+      development]
+    teams:
+      admin:
+        - w3dt-stewards
+    visibility: public
   repl:
     collaborators:
       push:
@@ -2771,16 +2771,8 @@ repositories:
       admin:
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
-    visibility: public
-  research:
-    description: "Check https://github.com/libp2p/notes "
-    teams:
-      admin:
-        - Admin
-      pull:
-        - contributors
+        - Repos - Go
     visibility: public
   research-dht:
     description: Moved discussion notes to https://github.com/libp2p/notes
@@ -2795,6 +2787,14 @@ repositories:
         - contributors
       push:
         - Repos - JavaScript
+    visibility: public
+  research:
+    description: "Check https://github.com/libp2p/notes "
+    teams:
+      admin:
+        - Admin
+      pull:
+        - contributors
     visibility: public
   rust-libp2p:
     branch_protection:
@@ -2832,22 +2832,22 @@ repositories:
         - Admin
         - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Specs contributors
-        - go-libp2p Maintainers
     visibility: public
   team-mgmt:
     description: Planning and project management for the libp2p Project
     teams:
       admin:
-        - w3dt-stewards
         - Admin
+        - w3dt-stewards
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
         - Repos - Rust
-        - go-libp2p Maintainers
     topics:
       - libp2p
     visibility: public
@@ -2855,15 +2855,14 @@ repositories:
     collaborators:
       admin:
         - laurentsenta
-      push: []
     description: Testground testplans for libp2p
     teams:
       admin:
         - Admin
         - w3dt-stewards
       push:
-        - Repos - Go
         - go-libp2p Maintainers
+        - Repos - Go
     visibility: public
   testlab:
     collaborators:
@@ -2876,9 +2875,9 @@ repositories:
       admin:
         - Admin
       push:
+        - go-libp2p Maintainers
         - Repos - Go
         - Repos - JavaScript
-        - go-libp2p Maintainers
     visibility: public
   website:
     collaborators:
@@ -2905,9 +2904,9 @@ repositories:
       admin:
         - w3dt-stewards
       push:
-        - Repos - Go
-        - go-libp2p Maintainers
         - Admin
+        - go-libp2p Maintainers
+        - Repos - Go
     topics:
       - libp2p
     visibility: public
@@ -2944,19 +2943,14 @@ teams:
     create_default_maintainer: false
     members:
       member:
-        - AlanSl
-        - ChihChengLiang
-        - JGAntunes
-        - NIC619
-        - RichardLitt
-        - Warchant
-        - ZenGround0
         - aamnv
+        - AlanSl
         - alexh
         - anorth
         - autonome
         - bigs
         - cemozerr
+        - ChihChengLiang
         - dryajov
         - dvdplm
         - fbaiodias
@@ -2969,6 +2963,7 @@ teams:
         - hacdias
         - iceseer
         - jbenetsafer
+        - JGAntunes
         - jrhea
         - jsoares
         - keks
@@ -2984,12 +2979,14 @@ teams:
         - mkalinin
         - mkg20001
         - mvid
+        - NIC619
         - nicola
         - nunofmn
         - olizilla
         - ortyomka
         - pipermerriam
         - ralexstokes
+        - RichardLitt
         - richardschneider
         - robzajac
         - romanb
@@ -2999,7 +2996,9 @@ teams:
         - stuckinaboot
         - travisperson
         - victorb
+        - Warchant
         - yiannisbot
+        - ZenGround0
         - zixuanzh
         - zuiris
     privacy: closed
@@ -3010,73 +3009,6 @@ teams:
         - gmasgras
         - mcamou
         - thattommyhall
-    privacy: closed
-  Repos - Go:
-    description: For all things go-libp2p
-    members:
-      maintainer:
-        - Stebalien
-        - aschmahmann
-        - jacobheun
-        - marten-seemann
-        - momack2
-        - raulk
-      member:
-        - BigLep
-        - Kubuxu
-        - alanshaw
-        - dirkmc
-        - gammazero
-        - hannahhoward
-        - hsanjuan
-        - iand
-        - lidel
-        - masih
-        - petar
-        - vyzo
-        - willscott
-        - yusefnapora
-    privacy: closed
-  Repos - Java:
-    members:
-      member:
-        - Nashatyrev
-        - ajsutton
-        - rolfyone
-    privacy: closed
-  Repos - JavaScript:
-    description: The team that hacks all the JavaScripts
-    members:
-      maintainer:
-        - jacobheun
-        - momack2
-      member:
-        - SgtPooki
-        - achingbrain
-        - hugomrdias
-        - lidel
-        - mpetrunic
-        - vasco-santos
-        - wemeetagain
-        - yusefnapora
-    privacy: closed
-  Repos - Rust:
-    description: "In Rust we tRust "
-    members:
-      maintainer:
-        - mxinden
-        - tomaka
-      member:
-        - AgeManning
-        - elenaf9
-        - thomaseizinger
-        - vmx
-        - yusefnapora
-    privacy: closed
-  Specs contributors:
-    members:
-      member:
-        - mxinden
     privacy: closed
   ci:
     description: ci
@@ -3102,8 +3034,8 @@ teams:
   docs:
     members:
       maintainer:
-        - momack2
         - dannys03
+        - momack2
       member:
         - jchris
         - walkerlj0
@@ -3127,21 +3059,88 @@ teams:
         - mpetrunic
         - wemeetagain
     privacy: closed
+  Repos - Go:
+    description: For all things go-libp2p
+    members:
+      maintainer:
+        - aschmahmann
+        - jacobheun
+        - marten-seemann
+        - momack2
+        - raulk
+        - Stebalien
+      member:
+        - alanshaw
+        - BigLep
+        - dirkmc
+        - gammazero
+        - hannahhoward
+        - hsanjuan
+        - iand
+        - Kubuxu
+        - lidel
+        - masih
+        - petar
+        - vyzo
+        - willscott
+        - yusefnapora
+    privacy: closed
+  Repos - Java:
+    members:
+      member:
+        - ajsutton
+        - Nashatyrev
+        - rolfyone
+    privacy: closed
+  Repos - JavaScript:
+    description: The team that hacks all the JavaScripts
+    members:
+      maintainer:
+        - jacobheun
+        - momack2
+      member:
+        - achingbrain
+        - hugomrdias
+        - lidel
+        - mpetrunic
+        - SgtPooki
+        - vasco-santos
+        - wemeetagain
+        - yusefnapora
+    privacy: closed
+  Repos - Rust:
+    description: "In Rust we tRust "
+    members:
+      maintainer:
+        - mxinden
+        - tomaka
+      member:
+        - AgeManning
+        - elenaf9
+        - thomaseizinger
+        - vmx
+        - yusefnapora
+    privacy: closed
+  Specs contributors:
+    members:
+      member:
+        - mxinden
+    privacy: closed
   w3dt-stewards:
     members:
       maintainer:
-        - BigLep
-        - Stebalien
         - aschmahmann
+        - BigLep
         - galargh
+        - Stebalien
       member:
-        - MarcoPolo
         - achingbrain
         - ajnavarro
         - arajasek
         - guseggert
-        - lidel
-        - mxinden
         - laurentsenta
+        - lidel
+        - MarcoPolo
+        - mxinden
         - p-shahi
     privacy: closed
