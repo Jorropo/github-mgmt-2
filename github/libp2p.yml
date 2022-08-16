@@ -97,7 +97,7 @@ members:
     - p-shahi
     - petar
     - pipermerriam
-    - protocollabsit-readonly
+    - protocollabsit-readonly # KEEP: it doesn't show up in the audit log because it's read only
     - protolambda
     - ralexstokes
     - RichardLitt
@@ -262,7 +262,7 @@ repositories:
   dht-hardening:
     collaborators:
       admin:
-        - vyzo
+        - vyzo # KEEP: as the original repository author
     description: testgound plans for DHT hardening
     teams:
       admin:
@@ -443,7 +443,7 @@ repositories:
   go-doh-resolver:
     collaborators:
       admin:
-        - vyzo
+        - vyzo # KEEP: as the original repository author
       push:
         - web3-bot
     description: DNS over HTTPS resolver
@@ -574,7 +574,7 @@ repositories:
   go-libp2p-circuit-progs:
     collaborators:
       admin:
-        - vyzo
+        - vyzo # KEEP: as the original repository author
     description: "[DEPRECATED] Simple testing programs for go-libp2p-circuit"
     teams:
       admin:
@@ -680,7 +680,7 @@ repositories:
   go-libp2p-daemon:
     collaborators:
       admin:
-        - vyzo
+        - vyzo # KEEP: as the original repository author
       push:
         - web3-bot
     description: a libp2p-backed daemon wrapping the functionalities of go-libp2p
@@ -753,7 +753,7 @@ repositories:
       master: {}
     collaborators:
       admin:
-        - hsanjuan
+        - hsanjuan # KEEP: as the repo main and only maintainer
         - Stebalien
       push:
         - web3-bot
@@ -1149,7 +1149,7 @@ repositories:
   go-libp2p-raft:
     collaborators:
       admin:
-        - hsanjuan
+        - hsanjuan # KEEP: as the repo main and only maintainer
       push:
         - web3-bot
     description: A LibP2P wrapper for hashicorp/raft implementation.
@@ -2755,7 +2755,7 @@ repositories:
   py-libp2p:
     collaborators:
       admin:
-        - carver
+        - carver # KEEP: for emergencies
     description: The Python implementation of the libp2p networking stack 🐍 [under
       development]
     teams:
@@ -3079,7 +3079,7 @@ teams:
         - iand
         - Kubuxu
         - lidel
-        - masih
+        - masih # KEEP: as PL Go dev
         - petar
         - vyzo
         - willscott
